@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Events(models.Model):
+class Event(models.Model):
     #id is automatically generated for each Instance by django
     event_name = models.CharField(max_length=30, blank=False) 
     registration_fees = models.FloatField(blank=False) 
