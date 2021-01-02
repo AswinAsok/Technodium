@@ -4,7 +4,8 @@ My aim is to create an event website for my imaginary institution with different
 </div>
 
 <hr>
-## Day 2
+
+## Day 2 - Setting Up, Models, admin-panel and Shell
 
 ### Creating virtual environment 
 * pip install virtualenv
