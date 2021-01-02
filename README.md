@@ -28,7 +28,7 @@ django-admin startapp Events
 - After creating the app add the class name to the 'settings.py' inside the 'Technodium' folder so that django can identify it as a app.
 
 ### Creating Models
-- Create the models with the required informations for the app, for a event it requires name, registration fees, description etc..
+- Create the models with the required informations for the app, for a event it requires name, registration fees, description etc.., then use these commands to create the database.
 ```python
 python manage.py makemigrations 
 python manage.py migrate
