@@ -16,4 +16,13 @@ def register(request):
     Registrations = Registration.objects.all()
     context = {}
     context['Registrations'] = Registrations
+
+    total_event = Event.objects.all().count()
+    event_names = ()
+    for event in range(total_event):
+        event_names = event_names + (Event.objects.get(id=event+1).event_name,)
+    
+    context['Eventnames'] = event_names
+
     return render(request, 'register.html', context)
+

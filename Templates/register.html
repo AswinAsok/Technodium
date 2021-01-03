@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>This is the Register Page</h1>
     <form action="success/" method="POST">
-        <fieldset >
-            <p>In Order to Enter the Event Enter your Details</p>
-            <p>Full Name : <input type="text" name= "fullname" value = ""></p>
-            <p>Email : <input type = "email" name = "age" value = ""></p>
-            <p>Institute Name: <input type="text" name = "place" value = ""></p>
-            <p>Github Profile : <input type="text" name = "mobile" value=""></p>
-            <hr>
-            <p>By Clicking the submit button you agree to all the <strong>Terms and Conditons </Strong>which are not <u><i>mentioned anywhere</i></u></p>
-            <input type = "submit">
-        </fieldset>
+      <fieldset>
+        <p>In Order to Enter the Event Enter your Details</p>
+        <p>Full Name : <input type="text" name="fullname" value="" /></p>
+        <p>Email : <input type="email" name="age" value="" /></p>
+        <p>Institute Name: <input type="text" name="place" value="" /></p>
+        <p>Github Profile : <input type="text" name="mobile" value="" /></p>
+        <hr />
+
+        <label >Choose a Event:</label>
+        <select>
+            {%for name in Eventnames%}
+                <option >{{name}}</option>
+            {% endfor %}
+        </select>
+
+        <p>
+          By Clicking the submit button you agree to all the
+          <strong>Terms and Conditons </strong>which are not
+          <u><i>mentioned anywhere</i></u>
+        </p>
+        <input type="submit" />
+      </fieldset>
     </form>
-</body>
+  </body>
 </html>
