@@ -29,10 +29,15 @@ class Registration(models.Model):
 
     total_event = Event.objects.all().count()
     event_names = ()
+    index = 1
     for event in range(total_event):
-        event_names = event_names + (Event.objects.get(id=event+1).event_name,)
+        name = (index,)
+        index+=1
+        name = name + (Event.objects.get(id=event+1).event_name,)
+        event_names = event_names+ (name,)
 
-    event = models.CharField(max_length=25,choices=event_names)
+    event = models.CharField(max_length=25,choices=event_names, default="Select a Option")
+
 
     print(event_names)
     def __str__(self):
