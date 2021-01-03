@@ -27,5 +27,13 @@ class Registration(models.Model):
     institute_name = models.CharField(max_length=50)
     github_profile = models.CharField(max_length=50)
 
+    total_event = Event.objects.all().count()
+    event_names = ()
+    for event in range(total_event):
+        event_names = event_names + (Event.objects.get(id=event+1).event_name,)
+
+    event = models.CharField(max_length=25,choices=event_names)
+
+    print(event_names)
     def __str__(self):
         return self.full_name
