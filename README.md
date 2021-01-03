@@ -53,3 +53,6 @@ Event.objects.filter(event_name = "Java Coding")
 
 ## Day 3 - Views, Models, Urls, and Loading Data from Database.
 
+<img src = "https://github.com/AswinAsok/Technodium/blob/master/Images%20Progress/D31.png">
+<img src = "https://github.com/AswinAsok/Technodium/blob/master/Images%20Progress/D32.png">
+
