@@ -9,7 +9,7 @@
     <h1>This is the Home Page</h1>
     <ol>
         {%for Event in Events%}
-        <li>{{Event.event_name}}</li>
+        <li>{{Event.event_name}}=>{{Event.event_description}}</li>
         {% endfor %}
     </ol>
 </body>
