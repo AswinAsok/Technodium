@@ -43,6 +43,7 @@ python manage.py createsuperuser
 ### Shell
 ```python
 python manage.py shell
+from Events.models import Event
 e = Event(event_name = "Java Coding", event_description = "Learn Java", registration_fees = "125")
 e.save()
 Event.objects.all()
