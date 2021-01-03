@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-from .models import Event
+from .models import Event, Registration
 
 # Create your views here.
 
@@ -12,5 +12,8 @@ def home(request):
     return render(request, 'home.html', context)
     #return HttpResponse("This is home page")
 
-def index_view(request):    
-    return HttpResponse("This is index page")
+def register(request):    
+    Registrations = Registration.objects.all()
+    context = {}
+    context['Registrations'] = Registrations
+    return render(request, 'register.html', context)
