@@ -54,7 +54,7 @@ Event.objects.filter(event_name = "Java Coding")
 ## Day 3 - Views, Models, Urls, and Loading Data from Database.
 
 <div align = "center">
- <img  height="50%" width="50%" src = "https://github.com/AswinAsok/Technodium/blob/master/Images%20Progress/D31.png">
- <img height="50%" width="50%" src = "https://github.com/AswinAsok/Technodium/blob/master/Images%20Progress/D32.png">
+ <img  height="50%" width="50%" src = "https://github.com/AswinAsok/Technodium/blob/master/Images/D31.png">
+ <img height="50%" width="50%" src = "https://github.com/AswinAsok/Technodium/blob/master/Images/D32.png">
 </div>
 
