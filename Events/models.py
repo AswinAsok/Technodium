@@ -10,7 +10,7 @@ class Event(models.Model):
     registration_fees = models.FloatField(blank=False) 
     #registration_fees = MoneyField(max_digits=14, decimal_places=2, default_currency='INR')
 
-    event_categories = models.CharField(max_length=100)
+
     event_description = models.CharField(max_length=250)
     event_contact = models.CharField(max_length=15)
     event_start_time = models.DateField(blank=True, null=True)
@@ -18,6 +18,12 @@ class Event(models.Model):
 
     event_iscompleted = models.BooleanField(default=False,blank=False)
     
+    event_category = models.CharField(max_length=35,default="others", choices=(
+        ('Web Development', 'Web Development'),
+        ('App Development', 'App Development'),
+        ('Others', 'Others'),
+    ))
+
     def __str__(self):
         return self.event_name
         
