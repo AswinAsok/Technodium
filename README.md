@@ -51,3 +51,10 @@ Event.objects.filter(event_name = "Java Coding")
 ```
 - Managers are accessible only via model classes, rather than from model instances, to enforce a separation between “table-level” operations and “record-level” operations. Therefore e(instance of model class) cannot be used only Event(Model class name) can used.
 
+## Day 3 - Views, Models, Urls, and Loading Data from Database.
+
+<div align = "center">
+ <img  height="50%" width="50%" src = "https://github.com/AswinAsok/Technodium/blob/master/Images/D31.png">
+ <img height="50%" width="50%" src = "https://github.com/AswinAsok/Technodium/blob/master/Images/D32.png">
+</div>
+
