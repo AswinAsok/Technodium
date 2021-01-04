@@ -1,5 +1,5 @@
 from django.db import models
-from djmoney.models.fields import MoneyField
+
 
 # Create your models here.
 
@@ -7,18 +7,21 @@ from djmoney.models.fields import MoneyField
 class Event(models.Model):
     #id is automatically generated for each Instance by django
     event_name = models.CharField(max_length=30, blank=False) 
-    #registration_fees = models.FloatField(blank=False) 
-    registration_fees = MoneyField(max_digits=14, decimal_places=2, default_currency='INR')
+    registration_fees = models.FloatField(blank=False) 
+    #registration_fees = MoneyField(max_digits=14, decimal_places=2, default_currency='INR')
 
     event_categories = models.CharField(max_length=100)
     event_description = models.CharField(max_length=250)
     event_contact = models.CharField(max_length=15)
     event_start_time = models.DateField(blank=True, null=True)
     event_end_time = models.DateField(blank=True, null=True)
+
+    event_iscompleted = models.BooleanField(default=False,blank=False)
     
     def __str__(self):
         return self.event_name
         
+
 
 class Registration(models.Model):
     
@@ -27,18 +30,5 @@ class Registration(models.Model):
     institute_name = models.CharField(max_length=50)
     github_profile = models.CharField(max_length=50)
 
-    total_event = Event.objects.all().count()
-    event_names = ()
-    index = 1
-    for event in range(total_event):
-        name = (index,)
-        index+=1
-        name = name + (Event.objects.get(id=event+1).event_name,)
-        event_names = event_names+ (name,)
-
-    event = models.CharField(max_length=25,choices=event_names, default="Select a Option")
-
-
-    print(event_names)
     def __str__(self):
         return self.full_name
