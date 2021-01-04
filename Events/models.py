@@ -48,6 +48,7 @@ class Registration(models.Model):
     
 
     event = models.CharField(max_length=25,choices=Event.get_events(self=None), default="Select a Option")
+    print(event)
 
     def __str__(self):
         return self.full_name
