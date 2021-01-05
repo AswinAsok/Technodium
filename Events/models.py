@@ -18,7 +18,6 @@ class Event(models.Model):
 
     event_iscompleted = models.BooleanField(default=False,blank=False)
     
-
     def __str__(self):
         return self.event_name
         

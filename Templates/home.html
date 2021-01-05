@@ -37,7 +37,7 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Events</a>
+              <a class="nav-link" href="register/">Register</a>
             </li>
           </ul>
         </div>
@@ -60,7 +60,7 @@
             <div class="card-body">
               <u><h5 class="card-title">{{Event.event_name}}</h5></u>
               <p class="card-text">{{Event.event_description}}</p>
-              <button type="button" class="btn btn-primary">₹{{Event.registration_fees}}</button>
+              <a href="register/"><button type="button" class="btn btn-primary">₹{{Event.registration_fees}}</button></a>
               <hr>
               <h6>Date Starting: {{Event.event_start_time}}<br>Date Ending: {{Event.event_end_time}}</h6>
             </div>
