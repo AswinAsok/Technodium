@@ -39,6 +39,7 @@ def register(request):
                 'email': '',
                 'institute_name': '',
                 'github_profile': '',
+                'event': ''
             }
         )
         context['form'] = form

@@ -80,8 +80,14 @@
 
         <div class="form-group">
           {{form.github_profile.errors}}
-          <br><Label>Github Profile</Label><br>
+          <Label>Github Profile</Label><br>
           {{form.github_profile}}
+        </div>
+
+        <div class="form-group">
+          {{form.event.errors}}
+          <br><Label>Event</Label><br>
+          {{form.event}}
         </div><br>
 
         <button type="submit" class="btn btn-primary">Submit</button>

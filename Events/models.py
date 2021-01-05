@@ -30,6 +30,8 @@ class Registration(models.Model):
     institute_name = models.CharField(max_length=50)
     github_profile = models.CharField(max_length=50)
 
+    event = models.ForeignKey(Event, on_delete = models.CASCADE,default="")
+
 
     def __str__(self):
         return self.full_name

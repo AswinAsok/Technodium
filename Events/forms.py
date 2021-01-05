@@ -6,4 +6,4 @@ class RegistrationForm(forms.ModelForm):
 
     class Meta:
         model = Registration
-        fields = ('full_name','email', 'institute_name','github_profile')
+        fields = ('full_name','email', 'institute_name','github_profile','event')

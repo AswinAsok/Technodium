@@ -10,8 +10,12 @@ class EventAdmin(admin.ModelAdmin):
     class Meta:
         model = Event
 
-
+class RegistrationAdmin(admin.ModelAdmin):
+    list_display = ('email','event')
+    
+    class Meta:
+        model = Registration
 
 
 admin.site.register(Event,EventAdmin)
-admin.site.register(Registration)
+admin.site.register(Registration,RegistrationAdmin)
