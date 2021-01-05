@@ -10,12 +10,8 @@ class EventAdmin(admin.ModelAdmin):
     class Meta:
         model = Event
 
-class RegistrationAdmin(admin.ModelAdmin):
-    list_filter = ('event',)
 
-    class Meta:
-        model = Registration
 
 
 admin.site.register(Event,EventAdmin)
-admin.site.register(Registration,RegistrationAdmin)
+admin.site.register(Registration)
