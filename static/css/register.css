@@ -1,0 +1,20 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.footer-text{
+    margin-top: 8px;
+}
+
+body{
+    background-color: #f0efef;
+    min-height: 400px;
+    margin-bottom: 100px;
+    clear: both;
+
+}

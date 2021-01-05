@@ -63,7 +63,8 @@ Event.objects.filter(event_name = "Java Coding")
 
 ## Day 5 -  Django Forms and Static Files
 
-<img  height="75%" width="75%" src = "https://github.com/AswinAsok/Technodium/blob/master/Images%20Progress/D51.png">
-<img height="75%" width="75%" src = "https://github.com/AswinAsok/Technodium/blob/master/Images%20Progress/D52.png">
+
+<img  height="80%" width="80%" src = "https://github.com/AswinAsok/Technodium/blob/master/Images%20Progress/D51.png">
+<img height="80%" width="80%" src = "https://github.com/AswinAsok/Technodium/blob/master/Images%20Progress/D52.png">
 
 
